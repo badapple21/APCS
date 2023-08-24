@@ -1,0 +1,40 @@
+public class InsertExample 
+{
+
+public static void outputArray( int[] arr)
+	{
+		for( int i = 0; i < arr.length; i++)
+			System.out.print( arr[i] + " ");
+		System.out.println();
+	}
+
+
+public static boolean insert(int[] arr, int count, int value)
+{
+  		 //Complete the method.
+}
+
+
+ 	public static void main(String[] args) 
+    	{
+       int[] a = { 3, 9, 15, 28, 37, 64, 0, 0, 0 };
+        if ( !insert(a, 6, 18))
+            System.out.println( "No room");
+        else
+            outputArray(a);
+        if ( !insert(a, 7, 2))
+            System.out.println( "No room");
+        else
+            outputArray(a);
+  
+        if ( !insert(a, 8, 78))
+            System.out.println( "No room");
+        else
+            outputArray(a);
+        
+        if ( !insert(a, 9, 20))
+            System.out.println( "No room");
+        else
+            outputArray(a);
+}
+}
