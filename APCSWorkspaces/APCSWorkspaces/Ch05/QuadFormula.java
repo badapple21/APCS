@@ -21,6 +21,7 @@ public class QuadFormula {
     public static void main(String[] args) {
         Scanner kboard = new Scanner(System.in);
 
+        while(true){
         System.out.print("a: ");
         int a = kboard.nextInt();
 
@@ -30,9 +31,9 @@ public class QuadFormula {
         System.out.print("c: ");
         int c = kboard.nextInt();
 
-        kboard.close();
 
         System.out.println(Quad(a, b, c));
+        }
     }
 
 }

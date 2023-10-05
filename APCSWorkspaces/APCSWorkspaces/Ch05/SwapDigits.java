@@ -1,17 +1,20 @@
 import java.util.Scanner;
 
 public class SwapDigits {
-    public static int swap(int num){   
+    public static String swap(int num){   
 
-        if(num < 10){
-            return Integer.parseInt(num * 10 + "");
-        }
+        String rtn;
 
         int ones = num % 10;
         int tens = num / 10 % 10;
         int otherDigits = num / 100;
+        if(otherDigits==0){
+            rtn = "";
+        }else{
+            rtn = otherDigits + "";
+        }
 
-        return Integer.parseInt(otherDigits + "" + ones + "" + tens + "");
+        return rtn + "" + ones + "" + tens + "";
     } public static void main(String[] args){
          Scanner kboard = new Scanner(System.in);
 
