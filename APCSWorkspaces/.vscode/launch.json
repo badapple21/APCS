@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SwapDigits",
+            "request": "launch",
+            "mainClass": "SwapDigits",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "QuadFormula",
             "request": "launch",
             "mainClass": "QuadFormula",
