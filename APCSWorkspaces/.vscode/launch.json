@@ -1,0 +1,98 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "QuadFormula",
+            "request": "launch",
+            "mainClass": "QuadFormula",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "MovingDisk",
+            "request": "launch",
+            "mainClass": "MovingDisk",
+            "projectName": "Ch03"
+        },
+        {
+            "type": "java",
+            "name": "BoxMover",
+            "request": "launch",
+            "mainClass": "BoxMover",
+            "projectName": "Exercise00"
+        },
+        {
+            "type": "java",
+            "name": "Morning",
+            "request": "launch",
+            "mainClass": "Morning",
+            "projectName": "Exercises03"
+        },
+        {
+            "type": "java",
+            "name": "Banner",
+            "request": "launch",
+            "mainClass": "Banner",
+            "projectName": "HelloGui"
+        },
+        {
+            "type": "java",
+            "name": "HelloGraphics",
+            "request": "launch",
+            "mainClass": "HelloGraphics",
+            "projectName": "HelloGui"
+        },
+        {
+            "type": "java",
+            "name": "HelloGui",
+            "request": "launch",
+            "mainClass": "HelloGui",
+            "projectName": "HelloGui"
+        },
+        {
+            "type": "java",
+            "name": "Face",
+            "request": "launch",
+            "mainClass": "Face",
+            "projectName": "Hello"
+        },
+        {
+            "type": "java",
+            "name": "Greetings",
+            "request": "launch",
+            "mainClass": "Greetings",
+            "projectName": "Hello"
+        },
+        {
+            "type": "java",
+            "name": "Greetings2",
+            "request": "launch",
+            "mainClass": "Greetings2",
+            "projectName": "Hello"
+        },
+        {
+            "type": "java",
+            "name": "HelloWorld",
+            "request": "launch",
+            "mainClass": "HelloWorld",
+            "projectName": "Hello"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "Hello"
+        }
+    ]
+}
