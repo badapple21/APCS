@@ -24,3 +24,9 @@ public class Greetings2
     kboard.close();
   }
 }
+
+
+public class balls
+{
+	
+}

@@ -12,8 +12,8 @@ public class WaitForBus
 	 */
   public static void waitTime(int curHour, int curMin, int depHour, int depMin)
   {
-	  int totalMins = ______________;
-	  System.out.println ("The bus will depart in " + _____________ + " hours and " + _____________ + " minutes");
+	  int totalMins = (depHour - curHour) * 60 + (depMin - curMin);
+	  System.out.println ("The bus will depart in " + totalMins/60 + " hours and " + (totalMins%60) + " minutes");
    
   }
 

@@ -122,7 +122,7 @@ public class BoxMover extends JPanel implements ActionListener {
 	{
 		
 		JFrame window = new JFrame("BoxMover");
-		window.setBounds(200,200,500,500);
+		window.setBounds(1920,200,500,500);
 		BoxMover myBoxMover = new BoxMover();
 		window.getContentPane().add(myBoxMover);		
 		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

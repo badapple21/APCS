@@ -1,5 +1,5 @@
 // Chapter 4 Question 9
-
+import java.awt.Graphics;
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Graphics;
