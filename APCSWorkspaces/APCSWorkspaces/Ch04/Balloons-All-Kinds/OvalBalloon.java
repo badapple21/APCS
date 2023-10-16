@@ -28,6 +28,7 @@ public class OvalBalloon extends Balloon {
      */
     public OvalBalloon(int x, int y, int r, Color c) {
         super(x, y, r, c);
+        public final double pi = 3.14152936; 
     }
 
     /**

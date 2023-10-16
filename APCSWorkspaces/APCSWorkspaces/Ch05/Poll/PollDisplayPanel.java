@@ -1,3 +1,4 @@
+
 /**
  * A PollDisplayPanel holds the vote counts and
  * displays the numbers and the pie chart for
@@ -8,65 +9,58 @@ import java.awt.Color;
 import java.awt.Graphics;
 import javax.swing.JPanel;
 
-public class PollDisplayPanel extends JPanel
-{
+public class PollDisplayPanel extends JPanel {
   private String name1, name2, name3;
   // Declare the int fields count1, count2, count3:
 
-  ________________________________________________________
+  int count1, count2, count3;
 
   // Constructor
-  public PollDisplayPanel(String nm1, String nm2, String nm3)
-  {
+  public PollDisplayPanel(String nm1, String nm2, String nm3) {
     setBackground(Color.WHITE);
     name1 = nm1;
     name2 = nm2;
     name3 = nm3;
-    count1 = 0;   // optional
-    count2 = 0;   // optional
-    count3 = 0;   // optional
+    count1 = 0; // optional
+    count2 = 0; // optional
+    count3 = 0; // optional
   }
 
   // Increments count1
-  public void vote1()
-  {
+  public void vote1() {
 
-    ______________________________________
+    count1 += 1;
   }
 
   // Increments count2
-  public void vote2()
-  {
+  public void vote2() {
 
-    ______________________________________
+    count2 += 1;
   }
 
   // Increments count3
-  public void vote3()
-  {
+  public void vote3() {
 
-    ______________________________________
+    count3 += 1;
   }
 
   // Returns a string representation of this object
-  public String toString()
-  {
-    return   _______________________________ +
+  public String toString() {
+    return "Tami: " + count1 +
 
-        ____________________________________ +
+        "  Brian: " + count2 +
 
-        ________________________________ ;
+        "  Liz: " + count3;
   }
 
   // Redefines JPanel's paintComponent to draw this pie chart
-  public void paintComponent(Graphics g)
-  {
+  public void paintComponent(Graphics g) {
     super.paintComponent(g);
 
     int w = getWidth();
     int h = getHeight();
-    int x = w/2;
-    int y = h/2;
+    int x = w / 2;
+    int y = h / 2;
     int r = Math.min(w, h) / 4;
     drawPieChart(g, x, y, r);
     drawLegend(g, x, y, r);
@@ -78,46 +72,50 @@ public class PollDisplayPanel extends JPanel
   // 2. draw the red sector and increment fromDegree by its size
   // 3. draw the green sector and increment fromDegree by its size
   // 4. set the size of the blue sector to the remaining
-  //    area, 360 - fromDegree, but not less than 0:
-  //      degrees = Math.max(360 - fromDegree, 0);
-  //    (Occasionally, due to rounding errors, fromDegree may become 361,
-  //    for example, count1 = 5, count2 = 11, count3 = 0.)
-  private void drawPieChart(Graphics g, int x, int y, int r)
-  {
+  // area, 360 - fromDegree, but not less than 0:
+  // degrees = Math.max(360 - fromDegree, 0);
+  // (Occasionally, due to rounding errors, fromDegree may become 361,
+  // for example, count1 = 5, count2 = 11, count3 = 0.)
+  private void drawPieChart(Graphics g, int x, int y, int r) {
     int total = count1 + count2 + count3;
     int fromDegree = 0;
 
-    if (total > 0)
-    {
+    if (total > 0) {
       int degrees;
       g.setColor(Color.RED);
       degrees = countToDegrees(count1, total);
       drawSector(g, x, y, r, fromDegree, degrees);
 
-      _________________________________________________
+      fromDegree += degrees;
 
-      ...
-    }
-    else
-    {
+      degrees = countToDegrees(count2, total);
+      g.setColor(Color.GREEN);
+      drawSector(g, x, y, r, fromDegree, degrees);
+
+      fromDegree += degrees;
+
+      degrees = Math.max(360 - fromDegree, 0);
+
+      g.setColor(Color.BLUE);
+      drawSector(g, x, y, r, fromDegree, degrees);
+
+    } else {
       g.setColor(Color.LIGHT_GRAY);
       drawSector(g, x, y, r, fromDegree, 360);
     }
   }
 
   // Draws the vote counts and the corresponding color squares.
-  private void drawLegend(Graphics g, int x, int y, int r)
-  {
+  private void drawLegend(Graphics g, int x, int y, int r) {
     // Display the counts:
     y += (r + 20);
     g.setColor(Color.BLACK);
 
-    g.drawString( _______________ , x - r, y);
+    g.drawString(count1 + "", x - r, y);
 
-    g.drawString( _______________ , x, y);
+    g.drawString(count2 + "", x, y);
 
-    g.drawString( _______________ , x + r, y);
-
+    g.drawString(count3 + "", x + r, y);
 
     // Display the color squares:
     y += 5;
@@ -132,16 +130,16 @@ public class PollDisplayPanel extends JPanel
 
   // Returns the number of degrees in a pie slice that
   // corresponds to count / total, rounded to the nearest integer.
-  private int countToDegrees(int count, int total)
-  {
+  private int countToDegrees(int count, int total) {
 
-    return _________________________________________________ ;
+    double d = ((double) count) / total;
+    d *= 360;
+    return (int) Math.floor(d);
   }
 
   // Draws a sector, centered at x, y, of radius r,
   // of angle measure degrees, starting at fromDegree.
-  private void drawSector(Graphics g, int x, int y, int r, int fromDegree, int degrees)
-  {
+  private void drawSector(Graphics g, int x, int y, int r, int fromDegree, int degrees) {
     if (degrees > 359)
       g.fillOval(x - r, y - r, 2 * r, 2 * r);
     else

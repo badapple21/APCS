@@ -8,14 +8,8 @@ public class TestXORblank
 	
 	public static boolean XOR(boolean a, boolean b)
 	{
-		//first way to test XOR
-		
-		
-		//second way to test XOR
-		
-		
-		//third way to test XOR
-		
+		//return (a != b);
+		//return (!(a == b));
 		
 	}
 	public static void main(String[] args) {

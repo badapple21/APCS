@@ -20,7 +20,7 @@ public class SwapDigits {
 
 
         while(true){
-            System.out.print("int: ");
+            System.out.print("int: ");  
             int num = kboard.nextInt();
 
 
