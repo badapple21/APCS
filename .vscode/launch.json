@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Leapyear",
+            "request": "launch",
+            "mainClass": "Leapyear",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "CoinTest",
+            "request": "launch",
+            "mainClass": "CoinTest",
+            "projectName": ""
+        },
+        {
+            "type": "java",
+            "name": "day",
+            "request": "launch",
+            "mainClass": "day",
+            "projectName": ""
+        },
+        {
+            "type": "java",
             "name": "Poll",
             "request": "launch",
             "mainClass": "Poll",

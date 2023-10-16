@@ -46,9 +46,13 @@ public class Rainbow extends JPanel {
     // Calculate the radius of the innermost (sky-color) semicircle
     // so that the width of the middle (green) ring is the
     // arithmetic mean of the widths of the red and magenta rings:
-    double d = (int) (width / 4) + (height*3/ 4) - mediumRadius*3;
+    //double d = (int) (width / 4) + (height*3/ 4) - mediumRadius*3;
+    //int innermostRadius = 2 * smallRadius - mediumRadius;
+    //double d = (double) (2 * mediumRadius) - radius + (height/4);
 
-    int innermostRadius = (int) Math.floor(d);
+    //int innermostRadius = (int) Math.floor(d);
+
+    int innermostRadius = radius - 3 * mediumRadius + 3 * smallRadius;
     // Draw the sky-color semicircle:
     g.setColor(skyColor);
     g.fillArc(xCenter - innermostRadius, yCenter - innermostRadius, innermostRadius * 2, innermostRadius * 2, 0, 180);
