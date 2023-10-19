@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Order",
+      "request": "launch",
+      "mainClass": "Order",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "cost",
       "request": "launch",
       "mainClass": "cost",
