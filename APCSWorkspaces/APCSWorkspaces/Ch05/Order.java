@@ -4,11 +4,16 @@ public class Order {
     public static double getOrderTotal(int bp, int nb) {
         int total = bp + nb;
         if (total >= 12) {
-            return (double) total * 16.00;
+            double cost = total * 16.00;
+            cost *= 100;
+            cost = (int)(cost+.5);
+            return  cost / 100;
         }
         if (total >= 3) {
-            return (double) total * 16.95;
-        }
+            double cost = total * 16.95;
+            cost *= 100;
+            cost = (int)(cost+.5);
+            return  cost / 100;        }
         if (bp == 1 && nb == 1) {
             return 39.95;
         } else {

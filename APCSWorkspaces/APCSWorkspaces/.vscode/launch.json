@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Poll",
+      "request": "launch",
+      "mainClass": "Poll",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Leapyear",
+      "request": "launch",
+      "mainClass": "Leapyear",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Order",
       "request": "launch",
       "mainClass": "Order",

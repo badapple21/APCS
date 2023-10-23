@@ -132,7 +132,7 @@ public class PollDisplayPanel extends JPanel {
   // corresponds to count / total, rounded to the nearest integer.
   private int countToDegrees(int count, int total) {
 
-    int d = ( count * 360 ) / total;
+    int d = (int) ((count * 360.0) / total + .5);
     return d;
   }
 
