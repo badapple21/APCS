@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Aptest",
+      "request": "launch",
+      "mainClass": "Aptest",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "BestFit",
       "request": "launch",
       "mainClass": "BestFit",
