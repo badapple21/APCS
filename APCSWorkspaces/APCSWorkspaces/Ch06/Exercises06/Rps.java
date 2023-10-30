@@ -12,14 +12,12 @@ import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
 
 public class Rps extends JFrame
-    implements ActionListener
-{
-  private final char moves[] = {'R', 'P', 'S'};
+    implements ActionListener {
+  private final char moves[] = { 'R', 'P', 'S' };
   private JRadioButton rock, paper, scissors;
   private JTextField display;
 
-  public Rps()
-  {
+  public Rps() {
     super("Rock, paper, Scissors");
 
     rock = new JRadioButton("   Rock   ", true);
@@ -47,18 +45,45 @@ public class Rps extends JFrame
     c.add(display);
   }
 
-  /** returns -1 if the player wins,
-   *  0 if it's a tie, and 1 if the computer wins
+  /**
+   * returns -1 if the player wins,
+   * 0 if it's a tie, and 1 if the computer wins
    */
-  private int nextPlay(char computerMove, char playerMove)
-  {
+  private int nextPlay(char computerMove, char playerMove) {
 
-    _____________________________________
-    ...
+    switch (computerMove) {
+      case 'R':
+        switch (playerMove) {
+          case 'R':
+            return 0;
+          case 'P':
+            return -1;
+          case 'S':
+            return 1;
+        }
+      case 'P':
+        switch (playerMove) {
+          case 'R':
+            return 1;
+          case 'P':
+            return 0;
+          case 'S':
+            return -1;
+        }
+      case 'S':
+        switch (playerMove) {
+          case 'R':
+            return -1;
+          case 'P':
+            return 1;
+          case 'S':
+            return 0;
+        }
+    }
+    return 0;
   }
 
-  public void actionPerformed(ActionEvent e)
-  {
+  public void actionPerformed(ActionEvent e) {
     char playerMove, computerMove;
     if (rock.isSelected())
       playerMove = 'R';
@@ -67,12 +92,12 @@ public class Rps extends JFrame
     else // if (scissors.isSelected())
       playerMove = 'S';
 
-    int k = (int)(Math.random() * 3);
+    int k = (int) (Math.random() * 3);
     computerMove = moves[k];
     int result = nextPlay(computerMove, playerMove);
 
     String msg = "  You said " + makeWord(playerMove) + ", I said " +
-                 makeWord(computerMove);
+        makeWord(computerMove);
     if (result < 0)
       msg += " -- you win.";
     else if (result == 0)
@@ -82,25 +107,27 @@ public class Rps extends JFrame
     display.setText(msg);
   }
 
-  private String makeWord(char move)
-  {
+  private String makeWord(char move) {
     String word = "";
 
-    switch (move)
-    {
-      case 'R': word = "ROCK"; break;
-      case 'P': word = "PAPER"; break;
-      case 'S': word = "SCISSORS"; break;
+    switch (move) {
+      case 'R':
+        word = "ROCK";
+        break;
+      case 'P':
+        word = "PAPER";
+        break;
+      case 'S':
+        word = "SCISSORS";
+        break;
     }
     return word;
   }
 
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) {
     Rps window = new Rps();
     window.setBounds(300, 300, 300, 140);
     window.setDefaultCloseOperation(EXIT_ON_CLOSE);
     window.setVisible(true);
   }
 }
-

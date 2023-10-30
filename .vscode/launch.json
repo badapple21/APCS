@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Rps",
+      "request": "launch",
+      "mainClass": "Rps",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "totalWage",
+      "request": "launch",
+      "mainClass": "totalWage",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Square",
+      "request": "launch",
+      "mainClass": "Square",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Aptest",
       "request": "launch",
       "mainClass": "Aptest",
