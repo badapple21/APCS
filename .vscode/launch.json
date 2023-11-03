@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Craps",
+      "request": "launch",
+      "mainClass": "Craps",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "CrapsTest1",
+      "request": "launch",
+      "mainClass": "CrapsTest1",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "CrapsStats",
+      "request": "launch",
+      "mainClass": "CrapsStats",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Die",
+      "request": "launch",
+      "mainClass": "Die",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "CrapsGame",
+      "request": "launch",
+      "mainClass": "CrapsGame",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Rps",
       "request": "launch",
       "mainClass": "Rps",

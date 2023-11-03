@@ -20,5 +20,6 @@ public class bestMatchClass {
             }
         }
         return Color.BLUE;
-    }
+    } 
+    public static void main(String[])
 }
