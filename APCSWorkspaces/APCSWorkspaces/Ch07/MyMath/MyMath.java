@@ -34,16 +34,20 @@ public class MyMath
    */
   public static boolean isPrime(int n)
   {
-    if (n <= 1)
+    if(n == 2)
+      return true;
+    else if (n <= 1 || n % 2 == 0)
       return false;
+    
 
-    int m = 2;
+    int m = 3;
+
 
     while (m * m <= n)
     {
       if (n % m == 0)
         return false;
-      m++;
+      m+=2;
     }
 
     return true;
@@ -82,23 +86,24 @@ public class MyMath
     Scanner kb = new Scanner(System.in);
     int n;
 
-    do
-    {
-      System.out.print("Enter an integer from 4 to 20: ");
-      n = kb.nextInt();
-    } while (n < 4 || n > 20);
+    // do
+    // {
+    //   System.out.print("Enter an integer from 4 to 20: ");
+    //   n = kb.nextInt();
+    // } while (n < 4 || n > 20);
 
-    kb.close();
+    // kb.close();
 
-    System.out.println();
-    System.out.println("1 + ... + " + n + " = " + sumUpTo(n));
-    System.out.println(n + "! = " + factorial(n));
-    System.out.println("Primes: ");
-    for (int k = 1; k <= n; k++)
-      if (isPrime(k))
-        System.out.print(k + " ");
-    System.out.println();
-    System.out.println("Goldbach conjecture up to " + n + ": " + testGoldbach(n));
+    // System.out.println();
+    // System.out.println("1 + ... + " + n + " = " + sumUpTo(n));
+    // System.out.println(n + "! = " + factorial(n));
+    // System.out.println("Primes: ");
+    // for (int k = 1; k <= n; k++)
+    //   if (isPrime(k))
+    //     System.out.print(k + " ");
+    // System.out.println();
+    // System.out.println("Goldbach conjecture up to " + n + ": " + testGoldbach(n));
+    System.out.println(isPrime(n) + "");
   }
 }
 

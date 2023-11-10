@@ -8,21 +8,21 @@ public class Die {
     public int getNumDots(){
         return dice_num;
     }
-    public static void main(String[] args){
-        Die die = new Die();
-        die.roll();
-        System.out.println(die.getNumDots());
-        die.roll();
-        System.out.println(die.getNumDots());
-        die.roll();
-        System.out.println(die.getNumDots());
-        die.roll();
-        System.out.println(die.getNumDots());
-        die.roll();
-        System.out.println(die.getNumDots());
-        die.roll();
-        System.out.println(die.getNumDots());
-        die.roll();
-        System.out.println(die.getNumDots());
-    }
+    // public static void main(String[] args){
+    //     Die die = new Die();
+    //     die.roll();
+    //     System.out.println(die.getNumDots());
+    //     die.roll();
+    //     System.out.println(die.getNumDots());
+    //     die.roll();
+    //     System.out.println(die.getNumDots());
+    //     die.roll();
+    //     System.out.println(die.getNumDots());
+    //     die.roll();
+    //     System.out.println(die.getNumDots());
+    //     die.roll();
+    //     System.out.println(die.getNumDots());
+    //     die.roll();
+    //     System.out.println(die.getNumDots());
+    // }
 }

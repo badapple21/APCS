@@ -6,6 +6,61 @@
   "configurations": [
     {
       "type": "java",
+      "name": "sumDigits",
+      "request": "launch",
+      "mainClass": "sumDigits",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "chekerBoard",
+      "request": "launch",
+      "mainClass": "chekerBoard",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "checkerBoard",
+      "request": "launch",
+      "mainClass": "checkerBoard",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "MyMath",
+      "request": "launch",
+      "mainClass": "MyMath",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "practice",
+      "request": "launch",
+      "mainClass": "practice"
+    },
+    {
+      "type": "java",
+      "name": "loops",
+      "request": "launch",
+      "mainClass": "loops",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "test",
+      "request": "launch",
+      "mainClass": "test",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "forloops",
+      "request": "launch",
+      "mainClass": "forloops",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Craps",
       "request": "launch",
       "mainClass": "Craps",

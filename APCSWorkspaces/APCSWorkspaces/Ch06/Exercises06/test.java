@@ -1,4 +1,4 @@
-public class test {
+public class loops {
     public static int max(int x, int y){
         if(x>y){
             return x;
