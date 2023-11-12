@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "CoinCombinations",
+      "request": "launch",
+      "mainClass": "CoinCombinations",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "sumDigits",
       "request": "launch",
       "mainClass": "sumDigits",
