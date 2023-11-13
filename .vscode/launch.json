@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SquareRoot",
+      "request": "launch",
+      "mainClass": "SquareRoot",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "CoinCombinations",
       "request": "launch",
       "mainClass": "CoinCombinations",
