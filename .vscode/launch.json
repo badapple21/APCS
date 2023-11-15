@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "written",
+      "request": "launch",
+      "mainClass": "written",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "SquareRoot",
       "request": "launch",
       "mainClass": "SquareRoot",
