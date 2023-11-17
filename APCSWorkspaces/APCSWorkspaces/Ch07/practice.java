@@ -1,5 +1,5 @@
 public class practice {
-
+    
     public static void qaddr(int m, int n){
         int i = 0;
         while(m >= n){
