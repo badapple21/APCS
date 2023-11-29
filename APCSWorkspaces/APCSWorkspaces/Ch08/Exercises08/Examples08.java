@@ -26,11 +26,23 @@ public class Examples08 {
         }
     }
 
-    // public static boolean apolloLikes(String s) {
-    // }
+    public static boolean apolloLikes(String s) {
+        char last = ' ';
+        s = s.trim();
+        s = s.toUpperCase();
+        char current = ' ';
+        for (int i = 0; i < s.length(); i++) {
+            current = s.charAt(i);
+            if (last == current) {
+                return true;
+            }
+            last = current;
+        }
+        return false;
+    }
 
     public static void main(String[] args) {
-        // System.out.println(onlyDigits("1234a"));
-        System.out.println(Integer.parseInt("null"));
+        System.out.println(onlyDigits("12 34"));
+        System.out.println(apolloLikes("books"));
     }
 }
