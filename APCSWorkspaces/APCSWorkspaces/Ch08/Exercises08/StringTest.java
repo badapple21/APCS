@@ -42,11 +42,33 @@ public class StringTest extends JFrame
     input.requestFocus();
   }
 
+  public String removeTag(String word) {
+    word = word.trim();
+    for (int i = 0; i < word.length(); i++) {
+      if (word.charAt(i) == '<') {
+        for (int j = 0; j < word.length(); j++) {
+          if (word.charAt(j) == '>') {
+            word = word.substring(0, i) + word.substring(j++, word.length());
+            break;
+          }
+        }
+        word = word.substring(0, i) + word.substring(i + 1, word.length());
+        i--;
+      }
+    }
+    return word;
+  }
+
   public boolean isPlaindrome(String word) {
-    word = word.replaceAll(" ", "");
-    word = word.replaceAll("'", "");
-    word = word.replaceAll(",", "");
     word = word.toLowerCase();
+    for (int i = 0; i < word.length(); i++) {
+      if (word.charAt(i) == ' ' || word.charAt(i) == ',' || word.charAt(i) == '\'') {
+        word = word.substring(0, i) + word.substring(i + 1, word.length());
+        i--;
+      }
+    }
+
+    word.trim();
     int len = word.length() - 1;
     for (int i = 0; i < len; i++) {
       if (word.charAt(i) == word.charAt(len - i)) {
@@ -61,7 +83,8 @@ public class StringTest extends JFrame
   public void actionPerformed(ActionEvent e) {
     String str = input.getText();
 
-    String Newstr = String.valueOf(isPlaindrome(str));
+    // String Newstr = String.valueOf(isPlaindrome(str));
+    String Newstr = removeTag(str);
 
     // int offset = 0;
     // String Month;
