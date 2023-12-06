@@ -44,25 +44,79 @@ public class StringTest extends JFrame
 
   public String removeTag(String word) {
     word = word.trim();
+    String opentag = "";
+    String closetag = "";
     for (int i = 0; i < word.length(); i++) {
       if (word.charAt(i) == '<') {
         for (int j = 0; j < word.length(); j++) {
           if (word.charAt(j) == '>') {
-            word = word.substring(0, i) + word.substring(j++, word.length());
-            break;
+            opentag = word.substring(i + 1, j);
+            for (int g = j; g < word.length(); g++) {
+              if (word.charAt(g) == '<' && word.charAt(g + 1) == '/') {
+                for (int h = g; h < word.length(); h++) {
+                  if (word.charAt(h) == '>') {
+                    closetag = word.substring(g + 2, h);
+                    if (opentag.equals(closetag)) {
+                      return word.substring(j + 1, g);
+                    }
+                  }
+                }
+                return word;
+              }
+            }
+            return word;
+
           }
         }
-        word = word.substring(0, i) + word.substring(i + 1, word.length());
-        i--;
+        return word;
+
       }
     }
+
     return word;
+  }
+
+  public String cc(String num) {
+    String ccNumber = "" + num.charAt(13) + num.charAt(15) + num.charAt(16) + num.charAt(17) + num.charAt(18);
+    return ccNumber;
+  }
+
+  public String changeName(String name) {
+    int i = name.indexOf(",");
+    String firstLast = name.substring(i + 1, name.length()) + " " + name.substring(0, i);
+    return firstLast.trim();
+  }
+
+  public String negative(String str) {
+    return str.replaceAll("0", "2").replaceAll("1", "0").replaceAll("2", "1");
+  }
+
+  public boolean StartsWith(String Str2) {
+    return this.equals(this.substring(0, Str2.length()));
+  }
+
+  public boolean EndsWith(String Str2) {
+    return this.equals(this.substring(this.length() - Str2.length(), this.length()));
+  }
+
+  public boolean isValidISBN(String ISBN) {
+    int sum = 0;
+    for (int i = 0; i < ISBN.length(); i++) {
+      if (i % 2 != 0) {
+        sum += (Character.digit(ISBN.charAt(i), 10) * 3);
+      } else {
+        sum += Character.digit(ISBN.charAt(i), 10);
+      }
+
+    }
+    return (sum % 10 == 0);
+
   }
 
   public boolean isPlaindrome(String word) {
     word = word.toLowerCase();
     for (int i = 0; i < word.length(); i++) {
-      if (word.charAt(i) == ' ' || word.charAt(i) == ',' || word.charAt(i) == '\'') {
+      if (!Character.isLetter(word.charAt(i))) {
         word = word.substring(0, i) + word.substring(i + 1, word.length());
         i--;
       }
@@ -84,7 +138,7 @@ public class StringTest extends JFrame
     String str = input.getText();
 
     // String Newstr = String.valueOf(isPlaindrome(str));
-    String Newstr = removeTag(str);
+    String Newstr = "" + isValidISBN(str);
 
     // int offset = 0;
     // String Month;

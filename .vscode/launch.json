@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Examples09Day2",
+      "request": "launch",
+      "mainClass": "Examples09Day2",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Examples09Day1",
+      "request": "launch",
+      "mainClass": "Examples09Day1",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "StringTest",
       "request": "launch",
       "mainClass": "StringTest",

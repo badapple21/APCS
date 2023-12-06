@@ -1,6 +1,11 @@
 public class Examples08 {
     public static boolean endsWithStar(String s) {
-        return (!(s.isEmpty()) && s.endsWith("*"));
+        return (s.length() >= 2 && s.endsWith("**"));
+    }
+
+    public static String ss(String s) {
+        return "" + s.charAt(0) + s.charAt(1) + s.charAt(2) + s.charAt(4) + s.charAt(5) + s.charAt(7) + s.charAt(8)
+                + s.charAt(9) + s.charAt(10);
     }
 
     public static String changeDate(String dateStr) {
@@ -42,7 +47,6 @@ public class Examples08 {
     }
 
     public static void main(String[] args) {
-        System.out.println(onlyDigits("12 34"));
-        System.out.println(apolloLikes("books"));
+        System.out.println(ss("987-65-4567"));
     }
 }
