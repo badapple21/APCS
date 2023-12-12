@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "LipogramAnalyzer",
+      "request": "launch",
+      "mainClass": "LipogramAnalyzer",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Lipogrammer",
+      "request": "launch",
+      "mainClass": "Lipogrammer",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Examples09Day2",
       "request": "launch",
       "mainClass": "Examples09Day2",
