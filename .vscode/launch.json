@@ -6,6 +6,12 @@
   "configurations": [
     {
       "type": "java",
+      "name": "InsertExample",
+      "request": "launch",
+      "mainClass": "InsertExample"
+    },
+    {
+      "type": "java",
       "name": "LipogramAnalyzer",
       "request": "launch",
       "mainClass": "LipogramAnalyzer",

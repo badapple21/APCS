@@ -11,9 +11,24 @@ public static void outputArray( int[] arr)
 
 public static boolean insert(int[] arr, int count, int value)
 {
-  		 //Complete the method.
-}
+    int index = 0;
+    if(count >= arr.length){
+        return false;
+    }
+    for(int i = 0; i < arr.length;i++){
+        if(arr[i]>value){
+            index = i;
+            break;
+        }
+        index = i;
+    }
 
+    for(int j = count;j>index;j--){
+        arr[j] = arr[j-1];
+    }
+    arr[index] = value;
+    return true;
+}
 
  	public static void main(String[] args) 
     	{
