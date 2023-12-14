@@ -6,6 +6,26 @@
   "configurations": [
     {
       "type": "java",
+      "name": "rotate",
+      "request": "launch",
+      "mainClass": "rotate",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Scrabble",
+      "request": "launch",
+      "mainClass": "Scrabble"
+    },
+    {
+      "type": "java",
+      "name": "RemoveExample",
+      "request": "launch",
+      "mainClass": "RemoveExample",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "InsertExample",
       "request": "launch",
       "mainClass": "InsertExample"
