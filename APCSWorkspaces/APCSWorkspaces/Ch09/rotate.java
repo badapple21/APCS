@@ -17,8 +17,10 @@ public class rotate {
 
     public static void outputArray(int[] arr) {
         for (int i = 0; i < arr.length; i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i]);
+            System.out.print(" ");
         }
+        System.out.println("");
     }
 
     public static void rotate(int[] a, int d) {
@@ -36,8 +38,16 @@ public class rotate {
 
     public static void main(String[] args) {
         int[] arr = {1,2,3,4,5,6};
-        rotate(arr, -3);
-        rotate(arr, 3);
+        rotateLeft(arr);
         outputArray(arr);
+        rotateRight(arr);
+        outputArray(arr);
+        rotate(arr, -2);
+        outputArray(arr);
+        rotate(arr, 4);
+        outputArray(arr);
+
+
+
     }
 }

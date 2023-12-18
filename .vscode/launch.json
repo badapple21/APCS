@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Polynomial",
+      "request": "launch",
+      "mainClass": "Polynomial",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "rotate",
       "request": "launch",
       "mainClass": "rotate",
