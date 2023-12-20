@@ -33,7 +33,6 @@ public class Morning extends JFrame {
     w.setSize(300, 150);
 
     Container c = w.getContentPane();
-    c.add(new MovingDisk());
 
     w.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

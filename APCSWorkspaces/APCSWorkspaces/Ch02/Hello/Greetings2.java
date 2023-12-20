@@ -26,7 +26,3 @@ public class Greetings2
 }
 
 
-public class balls
-{
-	
-}
