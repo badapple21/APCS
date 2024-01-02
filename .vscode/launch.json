@@ -6,6 +6,13 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Chomp",
+      "request": "launch",
+      "mainClass": "Chomp",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Substring",
       "request": "launch",
       "mainClass": "Substring",

@@ -46,8 +46,8 @@ public class Substring {
     }
 
     public static void main(String[] args) {
-        String[] ws = {"cat1", "cat2", "cat3"};
-        // output2D(testString(ws));
-        outputArray(allSubStrings("cat"));
+        String[] ws = {"cat", "bird", "mouse"};
+        output2D(testString(ws));
+        // outputArray(allSubStrings("cat"));
     }
 }

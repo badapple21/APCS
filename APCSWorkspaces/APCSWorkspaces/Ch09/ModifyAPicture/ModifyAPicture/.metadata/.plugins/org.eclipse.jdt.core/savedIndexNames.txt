@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+/Users/mkm22/Desktop/ModifyAPicture2/.metadata/.plugins/org.eclipse.jdt.core
+4116177742.index
+2581071094.index
+1865797976.index

@@ -1,0 +1,73 @@
+/**
+ * This class contains class (static) methods
+ * that will help you test the Picture class 
+ * methods.  Uncomment the methods and the code
+ * in the main to test.
+ * 
+ * @author Barbara Ericson 
+ */
+public class PictureTester
+{
+  /** Method to test zeroBlue */
+  public static void testZeroBlue()
+  {
+    Picture beach = new Picture("beach.jpg");
+    beach.explore();
+    beach.zeroBlue();
+    beach.explore();
+  }
+  
+  public static void testGrayScale()
+  {
+    Picture beach = new Picture("blueMotorcycle.jpg");
+    beach.explore();
+    beach.grayscale();
+    beach.explore();
+  }
+  
+  public static void testMirrorHorizontal()
+  {
+    Picture beach = new Picture("redMotorcycle.jpg");
+    beach.explore();
+    beach.mirrorHorizontal();
+    beach.explore();
+  }
+  
+  
+  public static void testMirrorFacade()
+  {
+    Picture beach = new Picture("building.jpg");
+    beach.explore();
+    beach.mirrorFacade();
+    beach.explore();
+  }
+  
+  
+  
+  public static void testDetectEdge()
+  {
+    Picture beach = new Picture("swan.jpg");
+    beach.explore();
+    beach.detectEdge(10);
+    beach.explore();
+  }
+  
+  
+  /** Main method for testing.  Every class can have a main
+    * method in Java */
+  public static void main(String[] args)
+  {
+    // uncomment a call here to run a test
+    // and comment out the ones you don't want
+    // to run
+
+	//
+	 // testZeroBlue();
+	 // testGrayScale();
+	 // testMirrorHorizontal();
+	 // testMirrorFacade();
+	  testDetectEdge();
+
+    
+  }
+}
