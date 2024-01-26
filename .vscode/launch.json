@@ -6,6 +6,55 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SnackBar",
+      "request": "launch",
+      "mainClass": "SnackBar",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Fraction",
+      "request": "launch",
+      "mainClass": "Fraction",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Time",
+      "request": "launch",
+      "mainClass": "Time",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Complex",
+      "request": "launch",
+      "mainClass": "Complex",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Temperature",
+      "request": "launch",
+      "mainClass": "Temperature",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "TestFraction",
+      "request": "launch",
+      "mainClass": "TestFraction",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "TestFractions",
+      "request": "launch",
+      "mainClass": "TestFractions",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Chomp",
       "request": "launch",
       "mainClass": "Chomp",
