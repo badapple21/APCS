@@ -23,7 +23,7 @@ public class SnackBar extends JFrame
   private VendingMachine[] machines;
 
   public SnackBar()
-  {
+  { 
     super("Snack Bar");
 
     // Load the coin icon for the vending machine buttons:
