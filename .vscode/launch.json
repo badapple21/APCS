@@ -6,6 +6,20 @@
   "configurations": [
     {
       "type": "java",
+      "name": "TestLineList",
+      "request": "launch",
+      "mainClass": "TestLineList",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Shuffler",
+      "request": "launch",
+      "mainClass": "Shuffler",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "SnackBar",
       "request": "launch",
       "mainClass": "SnackBar",

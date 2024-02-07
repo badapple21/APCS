@@ -21,7 +21,7 @@ public class Vendor {
     this.price = price;
   }
 
-  public int getTotalSales() {
+  public static double getTotalSales() {
     return totalSales;
   }
 
@@ -80,7 +80,7 @@ public class Vendor {
       stock--;
       change = depositedAmount - price;
       depositedAmount = 0;
-      totalSales++;
+      totalSales += (double) price / 100.0;
       return true;
     }
     change = depositedAmount;

@@ -1,7 +1,8 @@
+
 /**
  * The SnackBar program models several "vending machines"
  */
- 
+
 import java.awt.Color;
 import java.awt.Container;
 import java.awt.Dimension;
@@ -17,13 +18,11 @@ import javax.swing.JPasswordField;
 import javax.swing.JOptionPane;
 
 public class SnackBar extends JFrame
-                      implements ActionListener
-{
+    implements ActionListener {
   private static final String MY_PASSWORD = "jinx";
   private VendingMachine[] machines;
 
-  public SnackBar()
-  {
+  public SnackBar() {
     super("Snack Bar");
 
     // Load the coin icon for the vending machine buttons:
@@ -33,22 +32,20 @@ public class SnackBar extends JFrame
     Color brandColor2 = new Color(255, 180, 0);
     Color brandColor3 = new Color(90, 180, 0);
 
-    VendingMachine[] machines =
-    {
-      new VendingMachine("Java", brandColor1, 45, coin),
-      new VendingMachine("JApple", brandColor2, 50, coin),
-      new VendingMachine("Jinx", brandColor3, 35, coin)
+    VendingMachine[] machines = {
+        new VendingMachine("Java", brandColor1, 45, coin),
+        new VendingMachine("JApple", brandColor2, 50, coin),
+        new VendingMachine("Jinx", brandColor3, 35, coin)
     };
     this.machines = machines;
-    
-    int w = machines.length * (200+5);
+
+    int w = machines.length * (200 + 5);
     int h = 310;
     setMinimumSize(new Dimension(w, h));
 
     Box wall = Box.createHorizontalBox();
     wall.add(Box.createHorizontalStrut(5));
-    for (VendingMachine machine : machines)
-    {
+    for (VendingMachine machine : machines) {
       wall.add(machine);
       wall.add(Box.createHorizontalStrut(5));
     }
@@ -68,40 +65,34 @@ public class SnackBar extends JFrame
   /**
    * Password field: user strikes <Enter>
    */
-  public void actionPerformed(ActionEvent e)
-  {
-    JPasswordField password = (JPasswordField)e.getSource();
+  public void actionPerformed(ActionEvent e) {
+    JPasswordField password = (JPasswordField) e.getSource();
     String word = new String(password.getPassword());
     password.setText("");
-    if (MY_PASSWORD.equals(word))
-    {
+    if (MY_PASSWORD.equals(word)) {
       // Added for Section 10.12 Lab:
       double amt = Vendor.getTotalSales();
 
       for (VendingMachine machine : machines)
         machine.reload();
-        
+
       JOptionPane.showMessageDialog(null,
-        // Added for Section 10.12 Lab:
-        String.format("Total sales: $%.2f\n", amt) + 
-        "Machines reloaded",
-        "Service", JOptionPane.INFORMATION_MESSAGE);
-    }
-    else
-    {
+          // Added for Section 10.12 Lab:
+          String.format("Total sales: $%.2f\n", amt) +
+              "Machines reloaded",
+          "Service", JOptionPane.INFORMATION_MESSAGE);
+    } else {
       JOptionPane.showMessageDialog(null,
-        "Login failed", "Service", JOptionPane.ERROR_MESSAGE);
+          "Login failed", "Service", JOptionPane.ERROR_MESSAGE);
     }
   }
 
   // *****************************************************
 
-  public static void main(String[] args)
-  {
+  public static void main(String[] args) {
     SnackBar window = new SnackBar();
     window.setLocation(50, 50);
     window.setDefaultCloseOperation(EXIT_ON_CLOSE);
     window.setVisible(true);
   }
 }
-
