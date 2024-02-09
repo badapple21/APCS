@@ -25,8 +25,17 @@ public class DocumentIndex extends ArrayList<IndexEntry> {
             }
         }
         if (a) {
-            this.add(new IndexEntry(word));
+            for (int j = 0; j < this.size(); j++) {
+                if (word.compareToIgnoreCase(this.get(j).getWord()) < 0) {
+                    this.add(j, new IndexEntry(word));
+                    this.get(j).add(num);
+                    return;
+
+                }
+            }
+            this.add(this.size(), new IndexEntry(word));
             this.get(this.size() - 1).add(num);
+
         }
     }
 

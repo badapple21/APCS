@@ -24,7 +24,7 @@ public class IndexMaker {
       fileName = args[0];
     else {
       System.out.print("\nEnter input file name: ");
-      fileName = "fish.txt";
+      fileName = "C:\\Users\\mjn20\\APCS\\APCSWorkspaces\\APCSWorkspaces\\ch11\\IndexMaker\\fish.txt";
     }
 
     BufferedReader inputFile = new BufferedReader(new FileReader(fileName), 1024);
@@ -35,7 +35,7 @@ public class IndexMaker {
       fileName = args[1];
     else {
       System.out.print("\nEnter output file name: ");
-      fileName = "test.txt".trim();
+      fileName = "C:\\Users\\mjn20\\APCS\\APCSWorkspaces\\APCSWorkspaces\\ch11\\IndexMaker\\test.txt";
     }
 
     PrintWriter outputFile = new PrintWriter(new FileWriter(fileName));
