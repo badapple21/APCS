@@ -1,3 +1,4 @@
+
 /**
  * This program takes a text file, creates an index (by line numbers)
  *  for all the words in the file and writes the index
@@ -12,10 +13,8 @@ import java.io.PrintWriter;
 import java.io.IOException;
 import java.util.Scanner;
 
-public class IndexMaker
-{
-  public static void main(String[] args) throws IOException
-  {
+public class IndexMaker {
+  public static void main(String[] args) throws IOException {
     Scanner keyboard = new Scanner(System.in);
     String fileName;
 
@@ -23,27 +22,23 @@ public class IndexMaker
 
     if (args.length > 0)
       fileName = args[0];
-    else
-    {
+    else {
       System.out.print("\nEnter input file name: ");
-      fileName = keyboard.nextLine().trim();
+      fileName = "fish.txt";
     }
 
-    BufferedReader inputFile =
-                 new BufferedReader(new FileReader(fileName), 1024);
+    BufferedReader inputFile = new BufferedReader(new FileReader(fileName), 1024);
 
     // Create output file:
 
     if (args.length > 1)
       fileName = args[1];
-    else
-    {
+    else {
       System.out.print("\nEnter output file name: ");
-      fileName = keyboard.nextLine().trim();
+      fileName = "test.txt".trim();
     }
 
-    PrintWriter outputFile =
-                 new PrintWriter(new FileWriter(fileName));
+    PrintWriter outputFile = new PrintWriter(new FileWriter(fileName));
 
     // Create index:
 
@@ -51,8 +46,7 @@ public class IndexMaker
 
     String line;
     int lineNum = 0;
-    while ((line = inputFile.readLine()) != null)
-    {
+    while ((line = inputFile.readLine()) != null) {
       lineNum++;
       index.addAllWords(line, lineNum);
     }
