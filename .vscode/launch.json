@@ -6,6 +6,68 @@
   "configurations": [
     {
       "type": "java",
+      "name": "Fractal",
+      "request": "launch",
+      "mainClass": "Fractal",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Stars",
+      "request": "launch",
+      "mainClass": "Stars",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "AreaFillTest",
+      "request": "launch",
+      "mainClass": "AreaFillTest",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Examples13",
+      "request": "launch",
+      "mainClass": "Examples13",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "TestTriangle",
+      "request": "launch",
+      "mainClass": "TestTriangle",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "TestMoney",
+      "request": "launch",
+      "mainClass": "TestMoney",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Diploma",
+      "request": "launch",
+      "mainClass": "Diploma"
+    },
+    {
+      "type": "java",
+      "name": "DiplomaWithHonors",
+      "request": "launch",
+      "mainClass": "DiplomaWithHonors",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "IndexMaker",
+      "request": "launch",
+      "mainClass": "IndexMaker",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "TestLineList",
       "request": "launch",
       "mainClass": "TestLineList",

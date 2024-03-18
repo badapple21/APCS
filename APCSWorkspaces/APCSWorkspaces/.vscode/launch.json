@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "removeDuplicateChars",
+      "request": "launch",
+      "mainClass": "removeDuplicateChars"
+    },
+    {
+      "type": "java",
+      "name": "Stars",
+      "request": "launch",
+      "mainClass": "Stars",
+      "projectName": "",
+      "externalConsole": true
+    },
+    {
+      "type": "java",
+      "name": "FileReaderExample",
+      "request": "launch",
+      "mainClass": "FileReaderExample",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "IndexMaker",
       "request": "launch",
       "mainClass": "IndexMaker",
