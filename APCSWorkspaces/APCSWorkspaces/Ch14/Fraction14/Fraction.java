@@ -95,14 +95,18 @@ public class Fraction {
     return (double) num / (double) denom;
   }
 
-  public Fraction valueOf(double x) {
+  public static Fraction valueOf(double x) {
     return new Fraction((int) Math.round(x * DFLT_DENOM), DFLT_DENOM);
   }
+
+  public
 
   // Returns a string representation of this fraction
   public String toString() {
     return num + "/" + denom;
   }
+
+  public
 
   // ******************* Private methods ********************
 

@@ -6,6 +6,27 @@
   "configurations": [
     {
       "type": "java",
+      "name": "QuadraticFunctionTest",
+      "request": "launch",
+      "mainClass": "QuadraticFunctionTest",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "OLDTestFractions",
+      "request": "launch",
+      "mainClass": "OLDTestFractions",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Benchmarks",
+      "request": "launch",
+      "mainClass": "Benchmarks",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "Fractal",
       "request": "launch",
       "mainClass": "Fractal",

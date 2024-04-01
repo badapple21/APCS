@@ -1,4 +1,7 @@
-public class TestFractions {
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class OLDTestFractions {
   public static void testConstructors() {
     Fraction f1 = new Fraction();
     Fraction f2 = new Fraction(7);
