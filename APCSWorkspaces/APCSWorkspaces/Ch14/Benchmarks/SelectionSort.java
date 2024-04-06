@@ -25,4 +25,8 @@ public class SelectionSort
       // Decrement n (accomplished by n-- in the for loop).
     }
   }
+  public static void main(String[] args) {
+    double[] li = {7, 2, 6, 5, 4, 1, 3, 8};
+    sort(li);
+  }
 }

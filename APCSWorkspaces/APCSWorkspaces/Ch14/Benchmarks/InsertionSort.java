@@ -1,21 +1,17 @@
-public class InsertionSort
-{
+public class InsertionSort {
   // Sorts a[0], ..., a[a.length-1] in ascending order
-  //   using Insertion Sort.
-  public static void sort(double[] a)
-  {
-    for (int n = 1; n < a.length; n++)
-    {
+  // using Insertion Sort.
+  public static void sort(double[] a) {
+    for (int n = 1; n < a.length; n++) {
       // Save the next element to be inserted:
       double aTemp = a[n];
 
       // Going backward from a[n-1], shift elements to the
-      //   right until you find an element a[i] <= aTemp:
+      // right until you find an element a[i] <= aTemp:
 
       int i = n;
-      while (i > 0 && aTemp < a[i-1])
-      {
-        a[i] = a[i-1];
+      while (i > 0 && aTemp < a[i - 1]) {
+        a[i] = a[i - 1];
         i--;
       }
 
@@ -25,5 +21,9 @@ public class InsertionSort
       // Increment n (accomplished by n++ in the for loop).
     }
   }
-}
 
+  public static void main(String[] args) {
+    double[] li = { 7, 2, 6, 5, 4, 1, 3, 8 };
+    sort(li);
+  }
+}

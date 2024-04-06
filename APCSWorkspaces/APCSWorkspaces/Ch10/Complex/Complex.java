@@ -38,6 +38,22 @@ public class Complex {
         return "" + a + " + " + b + "i";
     }
 
+    public static int compare(Complex a, Complex b) {
+        if (a.abs() > b.abs) {
+            return 1;
+        } else if (a.abs < b.abs) {
+            return -1;
+        }
+        return 0;
+    }
+
+    public static boolean equals(Complex a, Complex b) {
+        if (compare(a, b) == 0) {
+            return true;
+        }
+        return false;
+    }
+
     public static void main(String[] args) {
 
         double a = -2;

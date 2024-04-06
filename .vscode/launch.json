@@ -6,6 +6,41 @@
   "configurations": [
     {
       "type": "java",
+      "name": "SortedListTest",
+      "request": "launch",
+      "mainClass": "SortedListTest",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Quicksort",
+      "request": "launch",
+      "mainClass": "Quicksort",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "Mergesort",
+      "request": "launch",
+      "mainClass": "Mergesort",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "InsertionSort",
+      "request": "launch",
+      "mainClass": "InsertionSort",
+      "projectName": ""
+    },
+    {
+      "type": "java",
+      "name": "SelectionSort",
+      "request": "launch",
+      "mainClass": "SelectionSort",
+      "projectName": ""
+    },
+    {
+      "type": "java",
       "name": "QuadraticFunctionTest",
       "request": "launch",
       "mainClass": "QuadraticFunctionTest",
